@@ -44,6 +44,7 @@ $BUILD_EXE_CMD = "& '" + $MSBUILD + "' '..\WindowsVirtualDesktopHelper.sln' /t:R
 $BUILD_SETUP_CMD = "& '" + $DEVENV + "' '..\Setup\Setup.vdproj' /build Release"
 $BUILD_SOLUTION_CMD = "& '" + $DEVENV + "' '..\WindowsVirtualDesktopHelper.sln' /rebuild Release"
 Invoke-Expression $BUILD_SOLUTION_CMD
+Invoke-Expression $BUILD_SOLUTION_AMD
 
 
 # Create Executable ZIP
